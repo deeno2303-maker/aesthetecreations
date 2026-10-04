@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | AestheteCreations</title>
+  <meta name="description" content="Browse all AestheteCreations paintings and prints.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+  <!-- This line connects the page to your CSS file -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">Aesthete<span>Creations</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html" class="cart-link">Cart<span class="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="container">
+      <h1 class="section-title">The Shop</h1>
+      <p class="section-sub">Every piece is handmade. Custom orders welcome.</p>
+      <div class="divider"></div>
+      <div class="filters" id="filters"></div>
+      <div class="product-grid" id="shop-grid"></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <h3>AestheteCreations</h3>
+      <p>Paintings, calligraphy &amp; personalised prints, made with love.</p>
+      <p>&copy; <span id="year"></span> AestheteCreations</p>
+    </div>
+  </footer>
+  <!-- products.js must load BEFORE cart.js -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

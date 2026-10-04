@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handmade Art & Personalised Gifts | AestheteCreations</title>
+  <meta name="description" content="Original paintings, Arabic calligraphy and custom acrylic prints by AestheteCreations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+  <!-- This line connects the page to your CSS file -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">Aesthete<span>Creations</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html" class="cart-link">Cart<span class="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero container">
+      <div>
+        <p class="eyebrow">Original art &middot; Made by hand</p>
+        <h1>Art that carries meaning.</h1>
+        <p>Paintings, Arabic calligraphy and personalised prints, created to bring beauty and intention into your space.</p>
+        <a href="shop.html" class="btn">Shop the collection</a>
+        <a href="contact.html" class="btn btn-outline">Commission a piece</a>
+      </div>
+      <img src="images/calligraphy.jpg" alt="Gold Arabic calligraphy canvas">
+    </section>
+    <section class="container">
+      <h2 class="section-title">Our Collections</h2>
+      <div class="divider"></div>
+      <div class="categories">
+        <a class="category" href="shop.html?category=Aesthete%20Paintings">
+          <img src="images/painting.jpg" alt="Aesthete Paintings">
+          <div><h3>Aesthete Paintings</h3><p>Custom Artwork &middot; Arabic Calligraphy &middot; Aesthete Thoughts</p></div>
+        </a>
+        <a class="category" href="shop.html?category=Aesthete%20Prints">
+          <img src="images/acrylic.jpg" alt="Aesthete Prints">
+          <div><h3>Aesthete Prints</h3><p>Acrylic Signs &middot; Keyrings &middot; Personalised Gifts</p></div>
+        </a>
+      </div>
+    </section>
+    <section class="container">
+      <h2 class="section-title">Featured Pieces</h2>
+      <div class="divider"></div>
+      <div class="product-grid" id="featured"></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <h3>AestheteCreations</h3>
+      <p>Paintings, calligraphy &amp; personalised prints, made with love.</p>
+      <p>&copy; <span id="year"></span> AestheteCreations</p>
+    </div>
+  </footer>
+  <!-- products.js must load BEFORE cart.js -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

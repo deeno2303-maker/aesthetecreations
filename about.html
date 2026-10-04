@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About the Artist | AestheteCreations</title>
+  <meta name="description" content="Meet the artist behind AestheteCreations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+  <!-- This line connects the page to your CSS file -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">Aesthete<span>Creations</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html" class="cart-link">Cart<span class="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="container split">
+      <img src="images/studio.jpg" alt="The AestheteCreations studio">
+      <div>
+        <p class="eyebrow">The artist</p>
+        <h1>Hello, I'm the hands behind AestheteCreations.</h1>
+        <div class="divider"></div>
+        <p>Write your story here: how you started painting, what Arabic calligraphy means to you, and what inspires your Aesthete Thoughts pieces.</p>
+        <p>Every painting and print is made by hand in my studio, with care for detail and meaning.</p>
+        <a href="shop.html" class="btn">See my work</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <h3>AestheteCreations</h3>
+      <p>Paintings, calligraphy &amp; personalised prints, made with love.</p>
+      <p>&copy; <span id="year"></span> AestheteCreations</p>
+    </div>
+  </footer>
+  <!-- products.js must load BEFORE cart.js -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
